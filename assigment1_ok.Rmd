@@ -1,0 +1,23 @@
+---
+title: "assigment1"
+author: "Barnabás Buzás"
+date: '2021 06 07 '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+```{r}
+## 1. Read the data
+cocktail_data <- read_csv("C:/Users/user/Desktop/PSZICHOLÓGIA/Doktori_1/R/cocktail_data.csv"
+```
+```{r}
+# 2. Tidy data
+# I had to solve most of this part in excel
+cocktail_data_tidy <- cocktail_data %>%
+  separate(name, c("Name", "Abv", "Acid", "Sugar", "Type", "Index", "Instructions", "Ingredient1", "Ingredient2", "Ingredient3", "Ingredient4", "Ingredient5", "Ingredient6", "Ncotw", sep = ",")) %>%
+ #? subset
+```
+
